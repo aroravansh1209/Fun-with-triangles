@@ -4,6 +4,27 @@ body{
     background-image: url(https://images.cdn3.stockunlimited.net/preview1300/blue-triangles-background_1845085.jpg);
 }
 
+.angles{
+    height: 100px;
+    background-color: darkblue;
+    padding: 20px;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-bottom: 25px;
+    box-shadow: 5px 5px 5px black;
+    opacity: 90%;
+   }
+   
+   .link{
+    padding: 0px 15px;
+      text-decoration: none;
+      color: white;
+      text-align: right;
+      float: right;
+      margin: auto;
+      font-size: large;
+   } 
+
 .heading-one{
     color: white;
     text-align:center;
