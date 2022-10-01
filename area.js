@@ -13,9 +13,9 @@ function calculateAreaOfTriangle() {
     Number(sides[1].value)
   );
   const finalArea = (areaOfTriangle / 2).toFixed(2);
-  if (sides[0].value === "" && sides[1].value === "") {
+  if (sides[0].value === "" || sides[1].value === "") {
     outputEl.innerText = "Please fill the required details!";
-  } else if (sides[0].value > 0 && sides[1].value > 0) {
+  } else if (sides[0].value > 0 || sides[1].value > 0) {
     outputEl.innerText = "The Area Of Triangle Is : " + finalArea;
   } else {
     outputEl.innerText = "The value can't be negative or zero!";

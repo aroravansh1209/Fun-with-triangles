@@ -13,12 +13,12 @@ function calculateHypotenues() {
     Number(sides[1].value)
   );
   const lengtOfHypotenues = Math.sqrt(sumOfSquares).toFixed(2);
-  if (sides[0].value === "" && sides[1].value === "") {
+  if (sides[0].value === "" || sides[1].value === "") {
     outputEl.innerText = "Please fill the required details!";
-  } else if (sides[0].value > 0 && sides[1].value > 0) {
-    outputEl.innerText = "The Length of Hypotenues is " + lengtOfHypotenues;
-  } else {
+  } else if (sides[0].value < 0 || sides[1].value < 0) {
     outputEl.innerText = "The value can't be negative or zero!";
+  } else {
+    outputEl.innerText = "The Length of Hypotenues is " + lengtOfHypotenues;
   }
 }
 
